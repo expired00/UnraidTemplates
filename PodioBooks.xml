@@ -38,7 +38,7 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
+  <WebUI>http://[IP]:[PORT:9564]</WebUI>
   <Banner></Banner>
-  <Icon>https://d2631fvi2jdnb6.cloudfront.net/docker/limetech/plex.png</Icon>
+  <Icon>https://raw.githubusercontent.com/expired00/UnraidTemplates/master/logo.png</Icon>
 </Containers>
