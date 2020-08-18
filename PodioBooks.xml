@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Date>2020-08-17</Date>
+  <Beta>False</Beta>
+  <Name>PodioBooks</Name>
+  <Changes>
+  </Changes>
+  <Overview>
+  Create and manage podcast rss feeds for your audiobook library!
+  </Overview>
+  <Description>
+  Create and manage podcast rss feeds for your audiobook library!
+  </Description>
+  <Registry>https://hub.docker.com/repository/docker/kaze00/podiobooks</Registry>
+  <Repository>kaze00/podiobooks</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+          <Port>
+        <HostPort>9564</HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      </Publish>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/podiobooks</HostDir>
+      <ContainerDir>/code/conf</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/library</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
+  <Banner></Banner>
+  <Icon>https://d2631fvi2jdnb6.cloudfront.net/docker/limetech/plex.png</Icon>
+</Containers>
